@@ -44,12 +44,12 @@ window.config(bg=DEEP_BLUE, pady=10)
 hostname_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE, highlightthickness=2, highlightbackground=ACCENT_ORANGE)
 hostname_frame.grid(row=0, column=0, padx=10, pady=5, sticky="ew")
 
-hostname_label = Label(hostname_frame, text="Computer Name:")
-hostname_label.config(bg=DEEP_BLUE, fg="white", font=("Arial", 10))
+hostname_label = Label(hostname_frame, text="Hostname:")
+hostname_label.config(bg=DEEP_BLUE, fg="white", font=("Arial", 12, "bold"))
 hostname_label.grid(row=0, column=0, pady=5, padx=10)
 
 hostname_value = Label(hostname_frame, text=get_hostname())
-hostname_value.config(bg=DEEP_BLUE, fg="white", font=("Arial", 12, "bold"))
+hostname_value.config(bg=DEEP_BLUE, fg="white", font=("Arial", 10))
 hostname_value.grid(row=0, column=1, pady=5, padx=10)
 
 
