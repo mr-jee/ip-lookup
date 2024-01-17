@@ -41,8 +41,7 @@ window.minsize(width=300, height=300)
 window.config(bg=DEEP_BLUE)
 
 # Hostname Frame
-hostname_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE)
-hostname_frame.config(width=290)
+hostname_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE, highlightthickness=2, highlightbackground=ACCENT_ORANGE)
 hostname_frame.grid(row=0, column=0, padx=10, pady=5, sticky="ew")
 
 hostname_label = Label(hostname_frame, text="Computer Name:")
@@ -55,7 +54,7 @@ hostname_value.grid(row=0, column=1, pady=5, padx=10)
 
 
 # Ethernet Frame
-ethernet_section_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE)
+ethernet_section_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE, highlightthickness=2, highlightbackground=ACCENT_ORANGE)
 ethernet_section_frame.grid(row=1, column=0, padx=10, pady=5, sticky="ew")
 
 for item in range(len(ethernet_ips)):
@@ -68,7 +67,7 @@ for item in range(len(ethernet_ips)):
     ethernaet_value.grid(row=item, column=1,padx=10, pady=10, sticky="w")
 
 # WiFi Frame
-wifi_section_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE)
+wifi_section_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE, highlightthickness=2, highlightbackground=ACCENT_ORANGE)
 wifi_section_frame.grid(row=2, column=0, padx=10, pady=5, sticky="ew")
 
 for item in range(len(wifi_ips)):
