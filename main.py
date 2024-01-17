@@ -37,8 +37,8 @@ ethernet_ips, wifi_ips = get_ethernet_wifi_ips()
 
 window = Tk()
 window.title("IP-Lookup")
-window.minsize(width=300, height=300)
-window.config(bg=DEEP_BLUE)
+window.minsize(width=250, height=250)
+window.config(bg=DEEP_BLUE, pady=10)
 
 # Hostname Frame
 hostname_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE, highlightthickness=2, highlightbackground=ACCENT_ORANGE)
