@@ -71,7 +71,7 @@ wifi_section_frame = Frame(window, bg=DEEP_BLUE, bd=2, relief=GROOVE, highlightt
 wifi_section_frame.grid(row=2, column=0, padx=10, pady=5, sticky="ew")
 
 for item in range(len(wifi_ips)):
-    wifi_label = Label(wifi_section_frame, text=f'Wifi {item}:')
+    wifi_label = Label(wifi_section_frame, text=f'Wifi {item}:         ')
     wifi_label.config(bg=DEEP_BLUE, fg="white", font=("Arial", 12, "bold"))
     wifi_label.grid(row=item, column=0,padx=10, pady=10)
 
